@@ -1,0 +1,16 @@
+next_stop: Наступна зупинка
+start_service: Запустити сервіс
+pause_service: Призупинити сервіс
+previous_stop: Попередня зупинка
+cancel_next_stop: Скасувати наступну зупинку
+report_congestion: Повідомити про перевантаження
+congestion_level:
+   RUNNING_SMOOTHLY: працює гладко
+   STOP_AND_GO: зупинись і йди
+   ЗАТОРИ: Затори
+   SEVERE_CONGESTION: Cильний затор
+no_vehicle: Жодного транспортного засобу не було призначено для цієї поїздки
+tts:
+   next_stop: "Наступна зупинка: {{name}}."
+   last_stop: "Це остання зупинка в цій подорожі."
+   welcome: "Ласкаво просимо до цієї служби."

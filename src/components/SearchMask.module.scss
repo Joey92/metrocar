@@ -1,0 +1,13 @@
+.flipArrows {
+  $radius: 2rem;
+  cursor: pointer;
+  height: $radius;
+  width: $radius;
+  line-height: $radius;
+  text-align: center;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  border: 1px black solid;
+  font-size: $radius / 2;
+}

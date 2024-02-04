@@ -1,0 +1,16 @@
+next_stop: Vorherige Haltestelle
+start_service: Fahrt starten
+pause_service: Fahrt pausieren
+previous_stop: Vorherige Haltestelle
+cancel_next_stop: Nächste Halt ausfallen lassen
+report_congestion: Stau melden
+congestion_level:
+  RUNNING_SMOOTHLY: Volle Fahrt
+  STOP_AND_GO: Stop and go
+  CONGESTION: Stau
+  SEVERE_CONGESTION: Stillstand
+no_vehicle: Es wurde kein Fahrzeug für diese Fahrt hinterlegt!
+tts:
+  next_stop: "Die nächste Station ist: {{name}}."
+  last_stop: "Endstation, alle bitte aussteigen."
+  welcome: "Willkommen auf unserer Fahrt."

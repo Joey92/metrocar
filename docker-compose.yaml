@@ -1,0 +1,159 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgis/postgis:16-3.4-alpine
+    environment:
+      POSTGRES_USER: "root"
+      POSTGRES_PASSWORD: "root"
+      POSTGRES_DB: "metrocar"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    ports:
+      - 5432:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data/pgdata
+
+  graphhopper:
+    build: services/graphhopper
+    restart: always
+
+  otp:
+    build: services/otp
+    restart: always
+    ports:
+      - "8082:8082"
+
+  nominatim:
+    image: mediagis/nominatim:4.1
+    environment:
+      # see https://github.com/mediagis/nominatim-docker/tree/master/4.1#configuration for more options
+      PBF_PATH: /osm.pbf
+      NOMINATIM_PASSWORD: someRandomPassword
+    volumes:
+      - nominatim:/var/lib/postgresql/14/main
+      - ${PWD}/full.osm.pbf:/osm.pbf
+    ports:
+      - 8084:8080
+    shm_size: 1gb
+
+  backend:
+    restart: always
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.backend.rule=Host(`backend.metrocar.localhost`)"
+      - "traefik.http.routers.backend.entrypoints=http"
+
+      - "traefik.http.services.backend.loadbalancer.server.port=8080"
+
+      - "traefik.http.middlewares.corsHeader.headers.accessControlAllowMethods=GET,OPTIONS,PATCH,POST,DELETE"
+      - "traefik.http.middlewares.corsHeader.headers.accessControlAllowHeaders=Authorization,Content-Type"
+      - "traefik.http.middlewares.corsHeader.headers.accessControlAllowCredentials=true"
+      - "traefik.http.middlewares.corsHeader.headers.accessControlAllowOriginList=http://metrocar.localhost"
+      - "traefik.http.middlewares.corsHeader.headers.accessControlMaxAge=100"
+      - "traefik.http.middlewares.corsHeader.headers.addVaryHeader=true"
+      - "traefik.http.routers.backend.middlewares=corsHeader@docker"
+    build:
+      target: build
+      context: backend
+    env_file:
+      - backend.env
+    depends_on: [postgres, redis]
+    volumes:
+      - "./backend/src:/app/src:ro"
+    command: npm run start:dev
+
+  directus:
+    build: services/directus
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.directus.rule=Host(`api.metrocar.localhost`)"
+      - "traefik.http.routers.directus.entrypoints=http"
+
+      - "traefik.http.services.directus.loadbalancer.server.port=8055"
+
+      - "traefik.http.middlewares.corsHeader.headers.accessControlAllowMethods=GET,OPTIONS,PATCH,POST,DELETE"
+      - "traefik.http.middlewares.corsHeader.headers.accessControlAllowHeaders=Authorization,Content-Type"
+      - "traefik.http.middlewares.corsHeader.headers.accessControlAllowCredentials=true"
+      - "traefik.http.middlewares.corsHeader.headers.accessControlAllowOriginList=http://metrocar.localhost"
+      - "traefik.http.middlewares.corsHeader.headers.accessControlMaxAge=100"
+      - "traefik.http.middlewares.corsHeader.headers.addVaryHeader=true"
+      - "traefik.http.routers.directus.middlewares=corsHeader@docker"
+    env_file:
+      - directus.env
+    depends_on: [postgres]
+    volumes:
+      - "./services/directus:/uploads"
+
+  frontend:
+    build:
+      target: build
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.frontend.rule=Host(`metrocar.localhost`)"
+      - "traefik.http.routers.frontend.entrypoints=http"
+      - "traefik.http.services.frontend.loadbalancer.server.port=3000"
+    restart: always
+    env_file:
+      - frontend.env
+    volumes:
+      - "./src:/app/src"
+      - "./public:/app/public"
+    command: yarn run dev
+    ports:
+      - 3000:3000
+
+  ingress: # reverse proxy
+    image: traefik:2.5
+    restart: always
+    depends_on: [backend]
+    volumes:
+      # Add Docker as a mounted volume, so that Traefik can read the labels of other services
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    command:
+      # Enable Docker in Traefik, so that it reads labels from Docker services
+      - --providers.docker
+      - --providers.docker.exposedbydefault=false
+      # Create an entrypoint "http" listening on port 80
+      - --entrypoints.http.address=:80
+      - --entrypoints.https.address=:443
+      - --api.insecure=true
+      # Enable the access log, with HTTP requests
+      - --accesslog
+      # Enable the Traefik log, for configurations and errors
+      - --log
+    ports:
+      - "8080:8080"
+      - "443:443"
+      - "80:80"
+
+  rt-validator:
+    image: cutrusf/gtfs-realtime-validator
+    ports:
+      - "8083:8080"
+
+  photon:
+    build: services/photon
+    environment:
+      NOMINATIM_HOST: nominatim
+      NOMINATIM_PORT: 5432
+      NOMINATIM_DATABASE: nominatim
+      NOMINATIM_DATABASE_USER: nominatim
+      NOMINATIM_DATABASE_PASSWORD: someRandomPassword
+    ports:
+      - 2322:2322
+    volumes:
+      - photon:/photon/photon_data
+
+  # rabbitmq:
+  #   image: rabbitmq:3-management-alpine
+  #   ports:
+  #     - "15672:15672"
+
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+
+volumes:
+  pgdata:
+  nominatim:
+  photon:

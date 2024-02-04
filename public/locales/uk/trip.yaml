@@ -1,0 +1,22 @@
+---
+no_trips_yet: Поїздок ще немає
+your_trips: Ваші подорожі
+upcoming_trips: Майбутні поїздки
+past_trips: Минулі поїздки
+begin_from: Починаючи з {{date}}
+до: До {{дата}}
+departure_on: Виізд {{date}}
+view_schedule: Переглянути розклад
+cancel_trip: Скасувати поїздку
+schedule_relationship:
+  CANCELED: Скасовано
+your_passengers: Ваші пасажири
+itinarary:
+  arrival_time: Час прибуття
+  departure_time: Час відправлення
+passenger_matrix:
+  station_name: Зупинка
+  passenger_has_space: Пасажир може зайняти місце
+  passenger_has_no_space: Для цього пасажира немає місцья
+title: "{{ destination }}"
+drive_now: Drive now

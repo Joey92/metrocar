@@ -1,0 +1,86 @@
+$stopWidth: 2rem;
+$lineWidth: $stopWidth / 2;
+$marginWidth: $stopWidth / 2;
+
+.legContainer {
+  display: flex;
+  padding-left: 0.5rem;
+}
+
+.lineContainer {
+  margin-right: $marginWidth;
+  width: $lineWidth;
+}
+
+$lineTopOffsetMultiplier: 0.6;
+
+.line {
+  position: relative;
+  top: $stopWidth * $lineTopOffsetMultiplier;
+  border-left: solid $stopWidth / 2 blue;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1px;
+  margin-top: $marginWidth;
+  height: 100%;
+  overflow: hidden;
+}
+
+.walk {
+  border-left: $stopWidth / 5 dotted blue;
+}
+
+.end {
+  border: none;
+}
+
+.lineMarker {
+  position: relative;
+  left: -(($stopWidth / 2) + ($lineWidth / 2) + $marginWidth);
+  top: $stopWidth * $lineTopOffsetMultiplier;
+  width: $stopWidth;
+  height: $stopWidth;
+  text-align: center;
+  overflow: hidden;
+  border: solid $stopWidth / 15 black;
+  border-radius: $stopWidth;
+  background-color: white;
+  margin-bottom: -($stopWidth / 2);
+}
+
+/* Passenger matrix */
+.entry {
+  height: 100%;
+}
+
+.entry td {
+  height: 100%;
+  padding: 0;
+}
+
+.entry td div {
+  height: 50%;
+  width: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Passenger matrix */
+.newRider {
+  background-color: aqua;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(31, 218, 255, 1);
+  }
+
+  70% {
+    background-color: rgb(31, 218, 255, 0.578);
+  }
+
+  100% {
+    background-color: rgba(31, 218, 255, 1);
+  }
+}

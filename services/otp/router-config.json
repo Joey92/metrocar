@@ -1,0 +1,19 @@
+{
+  "routingDefaults": {
+    "numItineraries": 6,
+    "walkSpeed": 2.0,
+    "stairsReluctance": 4.0,
+    "carDropoffTime": 240,
+    "debugItineraryFilter": false,
+    "maxWalkDistance": 1000
+  },
+  "updaters": [
+    {
+      "type": "real-time-alerts",
+      "sourceType": "gtfs-http",
+      "frequencySec": 60,
+      "url": "http://backend:8080/gtfs/rt/feed/alerts",
+      "feedId": "MetroCar"
+    }
+  ]
+}

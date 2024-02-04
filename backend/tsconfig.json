@@ -1,0 +1,30 @@
+{
+  "ts-node": {
+    "files": true
+  },
+  "compilerOptions": {
+    "typeRoots": ["./node_modules/@types"],
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "importHelpers": true,
+    "jsx": "react",
+    "alwaysStrict": true,
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "strictNullChecks": false,
+    "esModuleInterop": true,
+    "lib": ["es2019", "DOM"]
+  },
+  "include": ["./generated/**/*", "./src/**/*"],
+  "files": ["src/express.d.ts"],
+  "exclude": ["../*"]
+}

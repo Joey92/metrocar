@@ -1,0 +1,22 @@
+---
+no_trips_yet: No trips yet
+your_trips: Your trips
+upcoming_trips: Upcoming trips
+past_trips: Past trips
+starting_from: Starting from {{date}}
+until: until {{date}}
+departure_on: Departure on {{date}}
+view_schedule: View schedule
+cancel_trip: Cancel trip
+schedule_relationship:
+  CANCELED: Canceled
+your_passengers: Your passengers
+itinarary:
+  arrival_time: Arrival time
+  departure_time: Departure time
+passenger_matrix:
+  station_name: Station
+  passenger_has_space: The passenger can have a seat
+  passenger_has_no_space: No seat available for this passenger!
+title: "{{ destination }}"
+drive_now: Drive now

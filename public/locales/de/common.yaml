@@ -1,0 +1,83 @@
+---
+languages:
+  en:
+    name: English
+    flag: 🇬🇧
+  de:
+    name: Deutsch
+    flag: 🇩🇪
+  uk:
+    name: Українська
+    flag: 🇺🇦
+  pl:
+    name: Polski
+    flag: 🇵🇱
+change_language: Sprache ändern
+register: Registrieren
+no_notifications: Keine Benachrichtigungen
+you_have_notifications: Du hast {{count}} Benachrichtigungen
+login: Login
+logout: Log out
+save: Speichern
+email: E-Mail
+day:
+  monday: Montag
+  tuesday: Dienstag
+  wednesday: Mittwoch
+  thursday: Donnerstag
+  friday: Freitag
+  saturday: Samstag
+  sunday: Sonntag
+create_trip: 🚀 Fahrt erstellen
+my_offers: 🚗 Meine Angebote
+my_tickets: 🎟️ Meine Fahrten
+my_radars: 🔍 Meine Suchen
+search: 🔍 Suche
+profile: 🪪 Profil
+intresting_pages:
+  label: Interessante Seiten
+  links:
+    - name: Alle Haltepunkte
+      link: /stops
+made_in_berlin: Aus Berlin
+manage_agency: Agentur verwalten
+field_required: Feld muss augefüllt sein
+place_not_found: Ort nicht gefunden
+username: Nutzername
+unknown_error: |
+  Leider gab es einen Fehler. Wir sind informiert.
+  Versuche es später erneut.
+redirect_incoming: Du wirst weitergeleitet..
+tutorial:
+  next: Nächster Tip
+  previous: Vorheriger Tip
+contact_us:
+  label: Kontakt
+  links:
+    - link: mailto:contact@metrocar.org
+      name: E-Mail
+    - link: https://discord.gg/NA9UPuzH
+      name: Discord
+    - link: https://ko-fi.com/josimonson
+      name: Auf Ko-fi spenden
+page_errors:
+  404: 404, Die Seite existiert nicht
+pages:
+  impress:
+    title: Impressum
+    content: |
+      MetroCar is a carpooling facilitator service.
+
+      This is a private Project managed by Josef Simonson ([josef.simonson@metrocar.org](mailto:josef.simonson@metrocar.org)).
+
+      Contact:
+      * [E-Mail](mailto:contact@metrocar.org)
+      * Phone: +49 176 638 278 25
+
+      Address:
+
+      Am alten Kiesberg 51A
+
+      16356 Ahrensfelde
+
+      Deutschland

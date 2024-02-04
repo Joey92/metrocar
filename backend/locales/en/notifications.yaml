@@ -1,0 +1,6 @@
+trip_radar:
+  subject: Your search radar found new trips!
+  message: |
+    We have found {{amount}} new trips between {{origin}} and {{destination}}.
+
+    <a href="{{url}}">Click here to view them</a>

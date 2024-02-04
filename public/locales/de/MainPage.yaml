@@ -1,0 +1,85 @@
+textblocks:
+  - |
+    Viele Autositze bleiben leer und werden verschwendet. Nutze diese für Mitfahrer
+    und zur Kostendeckung für Fahrten, die du eh vor hast.
+  - |
+    Für Mitfahrer: Finde deine Mitfahrgelegenheit wie andere öffentliche Verkehrsmittel.
+  - |
+    Für Fahrer: Lege deine geplanten Fahrten bei uns ab und treffe Mitfahrer an Stationen entlang deiner Route.
+faq:
+  - q: Was ist MetroCar?
+    a: |
+      MetroCar ist eine Mitfahrgelegenheitsvermittelung. MetroCar ist ein neuer Ansatz für eine Mitfahrgelegenheit.
+
+      Der Plan ist mit PKW den öffentlichen Verkehr zur erweitern, anstatt eine Alternative
+      zu sein. Dein PKW wird praktisch zum Bus. Im Prinzip können Mitfahrer an Haltestellen ein- bzw aussteigen
+      wie bei einem Bus. Die Technologien hinter MetroCar werden auch im öffentlichen Verkehr genutzt.
+  - q: Werden Fahrer in Fahrpläne gesteckt?
+    a: |
+      Nein, die Fahrpläne kommen von den Fahrern selbst.
+
+      Die Fahrer fahren nicht wegen eines Fahrplans, sondern eher um besser Mitfahrer für geplante Fahrten aufzunehmen.
+  - q: Wie nutze ich MetroCar als Mitfahrer?
+    a: |
+      Für Mitfahrer sieht MetroCar genau so aus wie wie jedes andere öffentliche Verkehrsmittel.
+      Suche eine Verbindung von A nach B und wir finden die passende Fahrt um dahin zu kommen.
+
+      Momentan ist es noch nicht möglich mit dem Fahrer vorab zu kommunizieren. Man muss also zur Haltestelle
+      gehen und dort den Fahrer antreffen.
+
+      Die Kommunikation zwischen Fahrer und Mitfahrer kommt demnächst.
+  - q: Wie nutze ich MetroCar als Fahrer?
+    a: |
+      Um ein MetroCar zu sein müssen folgende Bedingungen erfüllt sein:
+      - Du musst eine Fahrt in naher Zukunft erledigen
+      - Es sind mindestens 2 Haltestellen auf deiner Route
+
+      Nach dem du deine Fahrt hinterlegt hast wird dir eine Liniennummer vergeben.
+      Es dauert ein paar Minuten bis deine Fahrt in der Suche erscheint.
+  - q: Wer betreibt MetroCar?
+    a: |
+      Na, ich!
+
+      Das ist ein Projekt von mir, dass ich mit meinem privaten Geld finanziere.
+
+      Wenn dir dieses Projekt gefällt, kannst du gerne spenden um die Server Kosten zu entlasten.
+
+      [Du kannst gerne auf meiner Ko-fi Seite spenden!](https://ko-fi.com/josimonson)
+  - q: Wie viel kostet eine Fahrt bei MetroCar?
+    a: |
+      Fahrer müssen auf lokale Gesetze für Mitfahrgelegenheiten achten.
+
+      Solange du Geld zur Kostendeckung deiner Fahrt bekommst, ist diese steuerfrei.
+
+      In naher Zukunft möchten wir Preise und Zahlungen anbieten, um es für Fahrer und Mitfahrer so einfach und sicher wie möglich zu machen.
+      Trinkgeld ist jedoch nicht reguliert.
+  - q: Wo ist MetroCar gerade verfügbar?
+    a: |
+      Derzeit können nur Fahrten in Deutschland hinterlegt werden. In Zukunft wird aber der Rest von Europa und Nord Amerika dazu kommen.
+  - q: Was für Features sind gerade implementiert?
+    a: |
+      - Ein Fahrplan Planner um Haltestellen entlang deiner Route zu finden
+      - Ein Suche für hinterlegte Fahrten
+      - Haltestellen können von Nutzern vorgeschlagen werden
+
+      Wir sind für jede Idee offen! Kontaktiere uns via E-Mail oder Discord.
+  - q: Welche Features kommen noch?
+    a: |
+      - Fahrer Kommunikation via App
+      - Mitfahrer check-in und -out
+      - Echtzeit Positionen von Fahrten und Alarme
+      - Mobile App
+      - Zahlungen und Preise
+      - Sich wiederholende Fahrten z.b. für Arbeitswege
+
+      Wir sind für jede Idee offen! Kontaktiere uns via E-Mail oder Discord.
+  - q: Wie würden Preise und Zahlungen implementiert werden?
+    a: |
+      Solange du Geld zur Kostendeckung deiner Fahrt bekommst, ist diese Steuerfrei.
+      Es wird pauschal ein Kilometer Preis berechnet den der Mitfahrer dann via unser System an dich Zahlen kann.
+
+      Da Fahrten im niedrigen Euro- oder sogar Centbereich liegen können, müssen wir dafür das Geld bei uns aufsammeln
+      bis eine Auszahlung möglich ist, sonst fallen zu hohe Gebühren an.
+
+      Für Nutzer dieser Platform bedeutet das, dass man ein Guthaben aufladen muss und Auszahlungen erst ab einem bestimmten
+      Wert ausgeführt werden.

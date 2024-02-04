@@ -1,0 +1,16 @@
+next_stop: Next stop
+start_service: Start service
+pause_service: Pause service
+previous_stop: Previous stop
+cancel_next_stop: Cancel next stop
+report_congestion: Report congestion
+congestion_level:
+  RUNNING_SMOOTHLY: Running smoothly
+  STOP_AND_GO: Stop and go
+  CONGESTION: Congestion
+  SEVERE_CONGESTION: Severe Congestion
+no_vehicle: No vehicle has been assigned to this trip
+tts:
+  next_stop: "The next stop is: {{name}}."
+  last_stop: "This is the last stop on this trip."
+  welcome: "Welcome to this service."

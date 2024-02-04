@@ -1,0 +1,22 @@
+---
+no_trips_yet: Noch keine Fahrten
+your_trips: Deine Fahrten
+upcoming_trips: Bevorstehende Fahrten
+past_trips: Vergangene Fahrten
+starting_from: Gültig von {{date}}
+until: bis {{date}}
+departure_on: Abfahrt am {{date}}
+view_schedule: Fahrplan ansehen
+cancel_trip: Fahrt stornieren
+schedule_relationship:
+  CANCELED: Fällt aus
+your_passengers: Deine Mitfahrer
+itinarary:
+  arrival_time: Ankunft
+  departure_time: Abfahrt
+passenger_matrix:
+  station_name: Station
+  passenger_has_space: Mitfahrer wird einen Platz haben
+  passenger_has_no_space: Kein Platz für diesen Mitfahrer!
+title: Deine Fahrt nach {{destination}}
+drive_now: Jetzt losfahren

@@ -1,0 +1,9 @@
+mounts
+node_modules
+.vscode
+.next
+services
+backend
+deploy
+
+*.pbf

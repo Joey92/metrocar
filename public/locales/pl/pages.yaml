@@ -1,0 +1,268 @@
+search:
+  USER_LOCATION: Your location
+  head:
+    title: Search for a ride
+  origin:
+    label: Where are you starting from?
+    placeholder: Type in any address or POI
+  destination:
+    label: Where are you going?
+    placeholder: Type in any address or POI
+  show_from_field: Not departing from your current location?
+  errors:
+    SEARCH_UNAVAILABLE: Sorry, the search function is currently unavailable.
+  or: or
+  arrive_by: Arrive by
+  depart_at: Depart at
+  date: Date
+  search: Search
+  no_result: Unfortunately no results...
+  create_trip_link_text: Have a car? Why don't you offer this trip?
+  create_trip_radar_text: Get notified when a trip is found
+  create_trip_radar_text_created: We'll notify you as soon as we found some trips
+  create_trip_radar_text_error: Sorry, please try again later
+  from_starting_point: from {{station}}
+  provide_input: Start by typing in an address or point of interest
+  request_seat: Send request
+  request_seat_sent: Request sent!
+  booking:
+    deny_reason:
+      FULLY_BOOKED: Fully booked
+      CANCELED_TRIP: Trip canceled
+    denied:
+      label: "The driver is not able to pick you up: {{reason}}"
+      tooltip: "The driver is not able to pick you up: {{reason}}"
+    pending:
+      label: Request pending
+      tooltip: We notified the driver of your request for pick-up.
+    confirmed:
+      label: Trip confirmed
+      tooltip: The driver has confirmed your pick-up! Enjoy your trip.
+  trip_offered_by: |
+    Trip offered by [{{username}}](/user/{{owner_id}})
+  ride_x_amount_of_stops: Ride {{amount}} stops
+trip_editor:
+  head:
+    title: Add your trip
+  origin:
+    label: Where do you depart from?
+    placeholder: Type in any address or POI
+  destination:
+    label: Where are you going?
+    placeholder: Type in any address or POI
+  departure_time: Departure time
+  departure_at: "{{time}} departure time"
+  advanced: Advanced
+  is_reoccuring: Is reoccurring?
+  license_plate: License plate of the vehicle
+  schedule_end:
+    label: When does this schedule end?
+    hint: |
+      Your schedule should be valid for at least a week, and maximum a month.
+      That's the amount of time you should commit to it.
+  allow_enter: Allow enter
+  allow_exit: Allow exit
+  min_abbr: mins.
+  select_vehicle: Select vehicle
+  create_vehicle: Create vehicle
+  add_vehicle: Add vehicle
+  no_stops_for_trip: Unfortunately there are no stations on your route.
+  stops_info: |
+    Your start and end point are not included in the trip. Other people can only join your ride 
+    at stations.
+  insert_trip: Offer trip
+  errors:
+    unable_to_fetch_stops: There were no stations found along your route. Sorry!
+    trip_minimum_stations: You need to select at least 2 stations
+    enter_exit_required: |
+      The first and last stations need to have passenger exchange
+      enabled
+    generic: Sorry, an unexpected error occurred. We've been informed that you had this error.
+    starttime_greater_than_endtime: Start time can not be greater than the scheduled end of your recurring schedule
+    calendar_at_least_one: You need to select at least one day in the week
+    vehicle_required: You must provide a vehicle
+  tutorials:
+    advanced:
+      header: Advanced station features
+      body: To manage departure times at stations you can enable advanced station features. There are going to be more in the future!
+    stop-select:
+      header: Select stops
+      body: You can deselect stops that you don't want to serve. This makes the trip quicker but gives people fewer chances to join your ride.
+    time:
+      header: Time Buffer
+      body: You can delay your departure time by adding more minutes. This is useful if you are planning to stay somewhere on the way.
+login:
+  head:
+    title: Login
+  info_alert: To continue, please log in.
+  password:
+    label: Password
+    placeholder: "****"
+    hint: Forgot password?
+  email:
+    label: E-Mail
+    placeholder: email@example.com
+    hint: We don't send any marketing E-Mails
+  otp:
+    label: One-Time Password
+    hint: Enter your one-time password from your authenticator
+    placeholder: "012345"
+  errors:
+    INVALID_PAYLOAD: Login failed. Please check your email and password and try again.
+    INVALID_OTP: Invalid one-time-password
+    INVALID_CREDENTIALS: Login failed. Please check your email and password and try again.
+    GENERIC: Login failed due to a system error. Please try again later...
+registration:
+  head:
+    title: Register
+  username:
+    label: How do you want to be called?
+    hint: E.g. your first name. This will be publicly visible.
+  password:
+    label: Password
+    hint: At least 8 characters long
+  email:
+    label: E-Mail
+    hint: ""
+  errors:
+    RECORD_NOT_UNIQUE:
+      email: An account with that E-Mail already exists
+    FAILED_VALIDATION:
+      password: Your password should be at least 8 characters long
+      email: Invalid E-Mail
+      first_name: Username is invalid
+  account_created: Account successfully created. You can login now.
+  registration_failed: Registration failed
+profile:
+  head:
+    title: Profile
+  email:
+    label: E-Mail
+    hint: Changing your E-Mail is currently not supported.
+  username:
+    label: Username
+    hint: Your username is shown publicly
+  description:
+    label: Tell us a little about yourself
+    hint: This is optional of course. It will be displayed on your public user profile.
+  language:
+    label: Language
+    hint: Your preferred language
+    reload_hint: Reload the page for the new language to take effect.
+  email-notifications:
+    label: E-Mail notifications
+    hint: Get notified via E-Mail e.g. when your radars found trips. We don't send marketing E-Mails or spam.
+  reset_password: Reset password
+  reset_password_request_success: |
+    An E-Mail has been sent with instructions on how
+    to change your password.
+  reset_password_request_failure: |
+    We couldn't fulfill your request at the moment.
+    Please try again later.
+  view_public_profile: View your public profile
+create_vehicle:
+  head:
+    title: Add your vehicle
+  licenseplate:
+    label: License plate
+    hint: Enter your license plate number so others can verify that it's your vehicle
+  description:
+    label: Description
+    hint: Describe make and model so others can recognize your vehicle
+forgot_password:
+  head:
+    title: Forgot password
+  email_sent: We've sent you an E-Mail with instructions on how to reset your password.
+report_stop:
+  head:
+    title: Report a stop
+  inactive: In review
+  active: Active
+  edit_disclaimer: |
+    We are reviewing your suggestion. You can still edit and move your stop while it is not reviewed yet.
+    Moving the marker automatically saves the stop.
+  stop_name: Station name
+  suggest: Suggest
+  info: |
+    Click somewhere on the map to suggest a stop. After a review, we will enable it! 
+    Just provide the name and submit.
+offers:
+  head:
+    title: Your offers
+  headings:
+    upcoming: Upcoming trips
+    past: Past trips
+trip:
+  ticket_request:
+    title: "{{username}} would like to join you!"
+    text: "From {{origin}} to {{destination}}"
+    approve: Approve
+    deny_with_reason: Deny with reason
+    deny_reason:
+      FULLY_BOOKED: Fully booked
+      CANCELED_TRIP: Canceled trip
+password_reset:
+  head:
+    title: Reset your password
+  success: Success! You can use your new password now.
+  error: Sorry, we could not process this request. Maybe try again later?
+  token_invalid: This request is invalid. Try resetting your password again.
+  token_expired: Your request has expired. Please request another password reset.
+  password_no_match: The passwords don't match
+  newPassword: New password
+  repeatPassword: Confirm new password
+  reset_password: Reset password
+  password_invalid: The entered password is not valid
+tickets_view:
+  head:
+    title: Your tickets
+  no_tickets: |
+    # Nothing here, yet.
+
+    The journey that you have joined will appear here. You can send a request to drivers in the Trip Search.
+radars:
+  head:
+    title: Your radars
+  no_radars: No radars have been created yet. You can create radars in the Trip Search.
+  from_to: From {{from}} to {{to}}, {{date}}
+  delete_radar: Delete Radar
+  radar_no_trips: No trips have been found yet. We will notify you as soon as we find a trip for your search query!
+  radar_found_trips: "Click here to view your search results"
+notifications:
+  head:
+    title: Your notifications
+  inbox_badge: New
+  footer:
+    collection:
+      trip_radar: "View your radars"
+user:
+  head:
+    title: "{{name}}"
+  route_badge:
+    hidden_amount: ...and {{amount}} more.
+  last_trips: Trips last month
+  review_count_zero: This user has no reviews, yet
+  review_count_one: From {{count}} review
+  review_count_other: From {{count}} reviews
+  active_on_lines_zero: Currently not serving any lines
+  active_on_lines_one: Active on line
+  active_on_lines_other: Active on lines
+  trips_amount_zero: "Has not made any trips in the last month."
+  trips_amount_one: "Has made 1 trip in the last month."
+  trips_amount_other: "Has made {{count}} trips in the last month."
+stops_view:
+  head:
+    title: All stops
+stop_view:
+  head:
+    title: Stop {{name}}
+  todays_departures: Today's departures
+  trip_ends_here: Trip ends here
+  view_departures: View departures
+  lines_passing: Lines passing this stop
+  no_lines_yet: No lines pass here, yet.
+  view_website: View external website
+route_view:
+  head:
+    title: Route {{name}}
+  participating_trips: Participating trips

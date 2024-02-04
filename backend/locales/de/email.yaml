@@ -1,0 +1,25 @@
+email-confirmation:
+  subject: Bestätige deine E-Mail
+  text: |
+    Hallo und willkommen!
+
+    Um die Registrierung abzuschließen clicke bitte auf diesen link: 
+
+    {{link}}
+  htmlText: |
+    <p>Hallo und willkommen!</p>
+    <br />
+    <p>Um die Registrierung abzuschließen clicke bitte auf diesen <a href="{{link}}">link</a>.</p>
+
+password-reset:
+  subject: Passwort zurücksetzen
+  text: |
+    Hallo,
+
+    Um dein Passwort zurückzusetzen klicke bitte auf diesen Link:
+
+    {{link}}
+  htmlText: |
+    <p>Hallo,</p>
+    <br />
+    <p>Clicke <a href="{{link}}">hier</a> um dein Passwort zurückzusetzen.</p>

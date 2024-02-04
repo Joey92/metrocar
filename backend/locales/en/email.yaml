@@ -1,0 +1,33 @@
+email-confirmation:
+  subject: Confirm your e-mail
+  text: |
+    Hello and welcome!
+
+    To complete the registration please confirm your e-mail by clicking on this link:
+
+    {{link}}
+
+    Kind regards
+  htmlText: |
+    <p>Hello and welcome!</p>
+    <br />
+    <p>To complete the registration please confirm your e-mail by clicking <a href="{{link}}">here</a>.</p>
+    <br />
+    <p>Kind regards</p>
+
+password-reset:
+  subject: Reset your password
+  text: |
+    Hello,
+
+    To reset your password click on the link:
+
+    {{link}}
+
+    Kind regards
+  htmlText: |
+    <p>Hello,</p>
+    <br />
+    <p>To reset your password click <a href="{{link}}">here</a>.</p>
+    <br />
+    <p>Kind regards</p>

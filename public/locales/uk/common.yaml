@@ -1,0 +1,84 @@
+---
+languages:
+  en:
+    name: English
+    flag: 🇬🇧
+  de:
+    name: Deutsch
+    flag: 🇩🇪
+  uk:
+    name: Українська
+    flag: 🇺🇦
+  pl:
+    name: Polski
+    flag: 🇵🇱
+change_language: Змінити мову
+register: Зареєструватися
+no_notifications: Немає нових повідомлень
+you_have_notifications: У вас {{count}} повідомлень
+login: Увійти
+logout: Вийти
+save: Зберегти
+email: Електронна пошта
+day:
+  monday: Понеділок
+  tuesday: Вівторок
+  wednesday: Середа
+  thursday: Четвер
+  friday: П'ятниця
+  saturday: Субота
+  sunday: Неділя
+create_trip: 🚀 Опублікувати поїздку
+my_offers: 🚗 Мої пропозиції
+my_tickets: 🎟️ Моі поіздки
+my_radars: 🔍 My radars
+search: 🔍 Пошук
+profile: 🪪 Профіль
+intresting_pages:
+  label: Цікаві сторінки
+  links:
+    - name: Переглянути усі зупинки
+      link: /зупинки
+made_in_berlin: Зроблено в Берліні
+manage_agency: Керувати агенцією
+field_required: Обов'язкове поле
+place_not_found: Місце не знайдено
+username: Username
+unknown_error: |
+  Сталася помилка. Нас повідомили про проблему.
+   Будь-ласка спробуйте пізніше.
+redirect_incoming: Ви будете перенаправлені.
+tutorial:
+  next: Наступна підказка
+  previous: Попередня підказка
+contact_us:
+  label: Контакти
+  links:
+    - link: mailto:contact@metrocar.org
+      name: Електронна пошта
+    - link: https://discord.gg/NA9UPuzH
+      name: Discord
+    - link: https://ko-fi.com/josimonson
+      name: Задонатити в ko-fi
+page_errors:
+  404: |
+    # 404, Сторінка, яку ви шукаєте, не існує
+pages:
+  impress:
+    title: Impress
+    content: |
+      MetroCar це сервіс, який сприяє карпулінгу.
+
+      Це приватний проект розроблений Josef Simonson ([josef.simonson@metrocar.org](mailto:josef.simonson@metrocar.org)).
+
+      Контакти:
+      * [E-Mail](mailto:contact@metrocar.org)
+      * Тел.: +49 176 638 278 25
+
+      Адреса:
+
+      Am alten Kiesberg 51A
+
+      16356 Ahrensfelde
+
+      Deutschland

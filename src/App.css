@@ -1,0 +1,50 @@
+html,
+body {
+  height: 100vh;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.container .row + .row {
+  margin-top: 1rem;
+}
+
+#root {
+  height: 100%;
+}
+
+.leaflet-popup {
+  width: 300px;
+}
+
+.leaflet-container {
+  z-index: 0;
+}
+
+.leaflet-container a {
+  color: #fff;
+}
+
+.footer {
+  background-color: rgb(248, 249, 250);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.main-text .col {
+  margin-top: 0.75em;
+}
+
+.user-description {
+  white-space: pre-line;
+}
+
+.searchMaskInput {
+  padding: 0.75rem;
+}

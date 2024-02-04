@@ -1,0 +1,89 @@
+textblocks:
+  - |
+    A lot of car seats are empty and wasted. Make use of the empty seats
+    and take passengers with you on trips you have to take anyway.
+  - |
+    For passengers: Search for a ride as if it were public transport.
+  - |
+    For drivers: Turn your car into a bus and schedule your trips with us.
+    Pick up and drop off passengers at specific stops.
+faq:
+  - q: What is MetroCar?
+    a: |
+      This is a platform to facilitate carpooling trips. It's a different approach to carpooling.
+
+      The plan is that private cars can be an extension of the public transport system and not an alternative.
+      You can turn your car into a bus. The principle behind this system is that passengers get in and out
+      at stations and cars follow a route like a bus does. Under the hood, MetroCar uses systems that are made for the public transport industry.
+  - q: Do drivers get put into a schedule?
+    a: |
+      No, MetroCar does not force drivers into a schedule.
+
+      Instead, the schedule is created from trips that drivers contribute.
+      The driver is not driving for the sake of schedule, hopefully. But instead, they pick up passengers on their way because they are on their way.
+  - q: How do I use MetroCar as a Passenger?
+    a: |
+      For passengers, MetroCar looks like another public transport service. 
+
+      You search on how to get from A to B and we will find the next departure at a station near you.
+      
+      With the current features, it's currently not possible to notify the driver that you want to take a trip with them.
+      You will have to go to the station and meet the Driver when he passes the station.
+      Communication with the driver is coming soon.
+  - q: How do I use MetroCar as a Driver?
+    a: |
+      To "be" a MetroCar these conditions have to be met:
+      - You need to drive somewhere in the future
+      - At least 2 stations need to be on your route
+
+      After you inserted your trip it will be assigned to a line number.
+      It takes a couple of minutes until it appears in the search results.
+  - q: Who operates MetroCar?
+    a: |
+      I do!
+      
+      It's a project I'm currently hosting myself with my own Money.
+      If you like this project, please consider donating to keep the server running.
+
+      [You can donate on my ko-fi page!](https://ko-fi.com/josimonson)
+      
+  - q: How much does it cost to take a MetroCar?
+    a: |
+      Currently, there is no regulation on pricing. 
+      
+      Drivers must respect the carpooling laws of their country when it comes to asking for money.
+      In an upcoming version, we want to integrate fares and payments to make MetroCar an easy and safe experience for both the driver and the passengers.
+      Tips on the other hand are not regulated.
+  - q: Where does the service operate?
+    a: |
+      We will be in Germany for a while and then probably expand the service to other European Countries, USA and/or Canada.
+  - q: What are some currently implemented features?
+    a: |
+      - A trip planner that finds stations along your route
+      - A comprehensive trip search
+      - Crowd-sourced stations ([You can suggest stops here](https://metrocar.org/stops))
+      
+      I'm open to ideas! Please contact me with any ideas you have or join our discord.
+  - q: What are some upcoming features?
+    a: |
+      I'm planning several features:
+      - Driver communication
+      - Passenger check-in/out system
+      - Realtime position updates and alerts
+      - Mobile App
+      - Payments and fares
+      - Recurring trips for commuters
+      - A sophisticated schedule system via GTFS and GTFS-RT
+      I'm open to ideas! Please contact me with any ideas you have or join our discord.
+  - q: How would fares and payments be implemented?
+    a: |
+      Carpooling, depending on the country, has a specific status that allows you to get money tax free
+      as long as it's covering costs for your journey.
+
+      That being said, a certain kilometer price can be calculated that you can get from taking passengers with you.
+
+      Because some journey costs can be on the lower end of the euro we are forced to collect the money on our side first
+      or else we'd have to pay a high money transaction price.
+    
+      For users of this platform, this means that you will have to top up a MetroCar account/wallet with funds. Users offering
+      rides will have to wait until a certain threshold is earned before receiving a payout.

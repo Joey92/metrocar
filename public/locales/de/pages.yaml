@@ -1,0 +1,269 @@
+---
+search:
+  USER_LOCATION: Dein Standort
+  head:
+    title: Fahrt suchen
+  origin:
+    label: Wo soll's los gehen?
+    placeholder: Type in any address or POI
+  destination:
+    label: Wo geht's hin?
+    placeholder: Type in any address or POI
+  show_from_field: Start festlegen?
+  errors:
+    SEARCH_UNAVAILABLE: Die Suchfunktion ist derzeit nicht verfügbar
+  or: oder
+  arrive_by: Ankunft um
+  depart_at: Abfahrt um
+  date: Datum
+  search: Verbindungen suchen
+  no_result: Leider keine Fahrten gefunden...
+  create_trip_link_text: Eigenes Auto? Dann stelle jetzt diese Fahrt ein!
+  create_trip_radar_text: Werde benachrichtigt wenn eine Fahrt verfügbar ist
+  create_trip_radar_text_created: Wir geben dir bescheid, sobald eine Fahrt gefunden wurde
+  create_trip_radar_text_error: Entschuldiige, versuche es später erneut
+  from_starting_point: von {{station}}
+  provide_input: Gebe hier eine Adresse oder einen Ort ein.
+  request_seat: Anfrage senden
+  request_seat_sent: Anfrage versendet
+  booking:
+    deny_reason:
+      FULLY_BOOKED: Ausgebucht
+      CANCELED_TRIP: Fahrt fällt leider aus
+    denied:
+      label: "Leider kann dich der Fahrer nicht mitnehmen: {{reason}}"
+      tooltip: "Leider kann dich der Fahrer nicht mitnehmen: {{reason}}"
+    pending:
+      label: Anfrage gestellt
+      tooltip: Wir haben den Fahrer bescheid gegeben, dass du mitfahren möchtest.
+    confirmed:
+      label: Anfrage bestätigt!
+      tooltip: Der Fahrer hat deine mitfahrt bestätigt!
+  trip_offered_by: |
+    Fahrt angeboten von {{username}}
+  ride_x_amount_of_stops: Fahre {{amount}} Stationen mit
+trip_editor:
+  head:
+    title: Add your trip
+  origin:
+    label: Start
+    placeholder: Type in any address or POI
+  destination:
+    label: Ziel
+    placeholder: Type in any address or POI
+  departure_time: Abfahrtszeit
+  departure_at: "{{time}} Abfahrtszeit"
+  advanced: Erweitert
+  is_reoccuring: Fahrt wiederholt sich?
+  license_plate: Kennzeichen des Fahrzeugs
+  schedule_end:
+    label: Wann ist der letzte Abfahrtstag?
+    hint: |
+      Dein Fahrplan sollte mindestens eien Woche gültig sein, bis maximum einen
+      Monat. So lange solltets du dich an deinen Fahrplan halten.
+  allow_enter: Einstieg erlaubt
+  allow_exit: Ausstieg erlaubt
+  min_abbr: min.
+  select_vehicle: Fahrzeug auswählen
+  create_vehicle: Fahrzeug hinterlegen
+  add_vehicle: Fahrzeug hinzufügen
+  no_stops_for_trip: Leider sind keine Stationen auf deiner Route.
+  stops_info: |
+    Start- und Endpunkt werden nicht in deiner Fahrt angezeigt. Mitfahrer können nur an Stationen 
+    ein- und aussteigen.
+  insert_trip: Fahrt anbieten
+  errors:
+    unable_to_fetch_stops: Leider gibt es keine Stationen entlang deiner Route.
+    trip_minimum_stations: Die Fahrt braucht mindestens 2 Haltestellen
+    enter_exit_required: |
+      Die erste und letzte Station muss Passagiere ein- bzw aussteigen lassen.
+    generic: Die Fahrt konnte nicht gespeichert werden, bitte versuche es später noch ein mal.
+    starttime_greater_than_endtime: Der Startzeitpunk darf nich nach dem Endzeitpunkt deines wiederholenden Fahrplans liegen.
+    calendar_at_least_one: Wähle mindestens ein Wochentag aus
+    vehicle_required: Es muss ein Fahrzeug angegeben werden
+    tutorials:
+      advanced:
+        header: Erweiterte funktionen
+        body: Um Abfahrtzeiten zu verfeinern kannst du den Erweiterten Modus einschalten. Es wird bald mehr davon geben!
+      stop-select:
+        header: Stationsauswahl
+        body: Du kannst Stationen abwählen, wenn du sie nicht anfahren möchtest. Das macht deine Fahrt schneller, aber es gibt leuten weniger möglichkeiten deiner Fahrt beizutreten.
+      time:
+        header: Zeit puffer
+        body: Du kannst deine Abfahrt verzögern indem du mehr Minuten hinzufügst, z.b. für eine Pause auf deiner Fahrt.
+login:
+  head:
+    title: Login
+  info_alert: Logge dich ein um fortzufahren.
+  password:
+    label: Passwort
+    placeholder: "****"
+    hint: Passwort vergessen?
+  email:
+    label: E-Mail
+    placeholder: email@example.com
+    hint: Wir versenden keine Marketing E-Mails
+  otp:
+    label: Einmal passwort
+    hint: Gebe hier dein einmal Passwort von deinem Authenticator ein
+    placeholder: "012345"
+  errors:
+    INVALID_PAYLOAD: Login fehlgeschlagen. überprüfe noch mal deine E-Mail und Passwort.
+    INVALID_OTP: Falsches Einmal Passwort
+    INVALID_CREDENTIALS: Login fehlgeschlagen. überprüfe noch mal deine E-Mail und Passwort.
+    GENERIC: System fehler.. Versuche es später erneut.
+registration:
+  head:
+    title: Registrieren
+  username:
+    label: Wie willst du genannt werden?
+    hint: z.b. dein Vorname. Wird öffentlich gezeigt.
+  password:
+    label: Passwort
+    hint: Mindestens 8 Zeichen
+  email:
+    label: E-Mail
+    hint: ""
+  errors:
+    RECORD_NOT_UNIQUE:
+      email: Ein Account mit dieser E-Mail existiert bereits
+    FAILED_VALIDATION:
+      password: Das Passwort sollte mindestens 8 Zeichen lang sein
+      email: Ungültige E-Mail
+      first_name: Ungültiger nutzername
+  account_created: Account wurde erstellt! Du kannst dich nun einloggen
+  registration_failed: Registrierung fehlgeschlagen. Versuche es später noch ein mal.
+profile:
+  head:
+    title: Profil
+  email:
+    label: E-Mail
+    hint: Derzeit kann man die E-Mail Adresse nicht ändern. Bitte schreibe uns eine E-Mail.
+  username:
+    label: Nutzername
+    hint: Dein Nutzername wird öffentlich gezeigt.
+  description:
+    label: Erzähl uns etwas über dich
+    hint: Das ist optional. Wird auf deinem ööffentlichen Profil angezeigt.
+  language:
+    label: Sprache
+    hint: In dieser Sprache kommunizierst du am besten
+    reload_hint: Lade die Seite neu um die Sprache zu übernehmen.
+  email-notifications:
+    label: E-Mail benachrichtigungen
+    hint: Erlaube E-Mail benachrichtigungen wenn z.b. eine Fahrt zu einer gespeicherten Suche gefunden wurde.
+  reset_password: Password zurücksetzen
+  password_reset_expired: Der Link ist ungültig oder abgelaufen.
+  password_no_match: Die Passwörter stimmen nicht überein
+  newPassword: Neues Passwort
+  repeatPassword: Passwort bestätigen
+  reset_password_success: Dein Passwort wurde aktualisiert!
+  reset_password_request_success: |
+    Schau in deinen E-Mail Postfach, um dein Passwort zu aktualisieren.
+  reset_password_request_failure: |
+    Leider konnten wir die E-Mail zum zurücksetzen deines Passworts nicht raus schicken. Versuch es später noch ein mal.
+  view_public_profile: Öffentliches Profil  ansehen
+create_vehicle:
+  head:
+    title: Fahrzeug hinterlegen
+  licenseplate:
+    label: Kennzeichen
+    hint: Gebe das Kennzeichen an, sodass andere verifizieren können, dass es das richtige Fahrzeug ist.
+  description:
+    label: Beschreibung
+    hint: Beschreibe Marke und Model deines Fahrzeugs
+forgot_password:
+  head:
+    title: Passwort vergessen
+  email_sent: Wir haben dir ein Link per E-Mail geschickt. Dort kannst du dein Passwort abändern.
+report_stop:
+  head:
+    title: Haltepunkt erstellen
+  inactive: Wird überpfüft
+  active: Aktiv
+  edit_disclaimer: |
+    Wir überprüfen deinen Vorschlag. Du kannst den Eintrag weiterhin bearbeiten, solange es noch nicht überprüft wurde.
+    Wenn du die Station verschiebst wird der Eintrag aktualisiert.
+  stop_name: Name der Station
+  suggest: Vorschlagen
+  info: |
+    Klicke auf der Karte um eine Station vorzuschlagen. Nach einer Überprüfung wird sie freigeschaltet!
+offers:
+  head:
+    title: Deine Mitfahrangebote
+  headings:
+    upcoming: Bevorstehende Fahrten
+    past: Fahrten in der Vergangenheit
+trip:
+  ticket_request:
+    title: "Neue Anfrage"
+    text: "{{username}} würde gerne von {{origin}} nach {{destination}} mit fahren"
+    approve: Zustimmen
+    deny_with_reason: Absagen
+    deny_choice:
+      FULLY_BOOKED: Vollständig gebucht
+      CANCELED_TRIP: Fahrt fällt aus
+password_reset:
+  head:
+    title: Passwort zurücksetzen
+  success: Dein Passwort wurde aktualisiert!
+  error: Tut uns leid, wir können die Anfrage derzeit nicht verarbeiten. Verusche es später erneut?
+  token_invalid: Die Anfrage ist nicht Gültig. Versuche noch ein mal das Passwort zurückzusetzen.
+  token_expired: Die Anfrage ist abgelaufen. Setze das Passwoort ernuet zurück.
+  password_no_match: Die Passwörter stimmen nicht überein.
+  newPassword: Neues Passwort
+  repeatPassword: Passwort wiederholen
+  reset_password: Passwort zurücksetzen
+  password_invalid: Das eingegebene Passwort ist nicht Gültig
+tickets_view:
+  head:
+    title: Deine Tickets
+  no_tickets: |
+    # Du bist noch keiner Fahrt beigetreten..
+
+    Sende eine Anfrage an eine Fahrt bei deiner nächsten Suche. Deine Afrage und dessen Status erscheint dann hier.
+radars:
+  head:
+    title: Deine Suchen
+  no_radars: Du hast noch kein Radar erstellt. Du kannst einen Erstellen wenn deine Suche keine ergebnisse gefunden hat.
+  from_to: Von {{from}} nach {{to}}, {{date}}
+  delete_radar: Radar löschen
+  radar_no_trips: Noch wurden keine Fahrten gefunden. Wir geben dir bescheid sobald wir eine Fahrt finden!
+  radar_found_trips: Klicke hier um die Fahrten zu sehen
+notifications:
+  head:
+    title: Deine Benachrichtigungen
+  inbox_badge: Neu
+  footer:
+    collection:
+      trip_radar: Schaue in deinen Suchen nach!
+user:
+  head:
+    title: "{{name}}"
+  route_badge:
+    hidden_amount: ...{{amount}} weitere.
+  last_trips: Fahrten im letzten Monat
+  review_count_zero: Dieser Nutzer hat noch keine Bewertungen
+  review_count_one: Aus einer Bewertung
+  review_count_other: Aus {{count}} Bewertungen
+  active_on_lines_zero: Noch keine Fahrten erstellt
+  active_on_lines_one: Aktiv auf der Linie
+  active_on_lines_other: Aktiv auf den Linien
+  trips_amount_zero: "Im letzten Monat keine Fahrt angeboten."
+  trips_amount_one: "Hat eine Fahrt im letzten Monat angebotenb."
+  trips_amount_other: "Hat im letzten Monat {{count}} Fahrten angeboten."
+stops_view:
+  head:
+    title: Alle Haltepunkte
+stop_view:
+  head:
+    title: Haltepunkt {{name}}
+  todays_departures: Heutige Abfahrten
+  trip_ends_here: Fahrt endet hier
+  view_departures: Abfahrten ansehen
+  lines_passing: Linien, die an dieser Haltestelle vorbeifahren
+  no_lines_yet: Es Fahren noch keine Linien hier entlang
+route_view:
+  head:
+    title: Route {{name}}
+  participating_trips: Fahrten auf dieser Linie

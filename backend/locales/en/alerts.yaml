@@ -1,0 +1,39 @@
+causes:
+  UNKNOWN_CAUSE: an unknown cause
+  OTHER_CAUSE: unforseen circumstance
+  TECHNICAL_PROBLEM: technical problem
+  STRIKE: a strike
+  DEMONSTRATION: a demonstration
+  ACCIDENT: an accident
+  HOLIDAY: a holiday
+  WEATHER: the weather
+  MAINTENANCE: maintetance reasons
+  CONSTRUCTION: a construction
+  POLICE_ACTIVITY: police activity
+  MEDICAL_EMERGENCY: a medical emergency
+
+effects:
+  NO_SERVICE: there is not service
+  REDUCED_SERVICE: there is reduced service
+  SIGNIFICANT_DELAYS: there are significant delays
+  DETOUR: there is a detour
+  ADDITIONAL_SERVICE: we added additional vehicles
+  MODIFIED_SERVICE: the servicie is modified
+  OTHER_EFFECT: there might be changes in the service
+  UNKNOWN_EFFECT: there might be changes in the service
+  STOP_MOVED: the station has been temporarly moved to a different location
+  NO_EFFECT: there is no change in the service
+  ACCESSIBILITY_ISSUE: the vehicle is less accesable
+
+alerts:
+  generated:
+    descriptionText: Due to {{cause}} {{effect}}
+  trip_canceled:
+    url: https://metrocar.org/trips/{{tripId}}
+    headerText: MetroCar trip cancelled
+    descriptionText: Unfortunatly your trip was cancelled.
+
+  stop_canceled:
+    url: https://metrocar.org/stops/{{stopId}}
+    headerText: Stop cancelled
+    descriptionText: Unfortunately your trip will not stop at {{stopName}}
